@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="A sample node.js application that uses g
 LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="purple"
 
-LABEL "repository"="https://github.com/abhinavdhasmana/github-action-example-node"
+LABEL "repository"="https://github.com/thinhngtruong/nodejs-ci-cd"
 LABEL "maintainer"="Abhinav Dhasmana <abhinav.dhasmana@live.com>"
 
 ADD entrypoint.sh /entrypoint.sh

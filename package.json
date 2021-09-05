@@ -1,5 +1,5 @@
 {
-  "name": "github-action-example-node",
+  "name": "nodejs-ci-cd",
   "version": "1.0.0",
   "description": "A sample node.js application that uses github actions for CI and CD",
   "main": "server.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abhinavdhasmana/github-action-example-node.git"
+    "url": "git+https://github.com/thinhngtruong/nodejs-ci-cd.git"
   },
   "keywords": [
     "node.js",
@@ -22,9 +22,9 @@
   "author": "abhinav dhasmana (abhinav.dhasmana@live.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/abhinavdhasmana/github-action-example-node/issues"
+    "url": "https://github.com/thinhngtruong/nodejs-ci-cd/issues"
   },
-  "homepage": "https://github.com/abhinavdhasmana/github-action-example-node#readme",
+  "homepage": "https://github.com/thinhngtruong/nodejs-ci-cd#readme",
   "dependencies": {
     "express": "^4.17.1",
     "http-errors": "^1.7.3",
