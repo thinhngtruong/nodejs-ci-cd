@@ -2,6 +2,8 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches: [ master ]
 name: npm build, lint, test and publish
 jobs:
   build-and-publish:
@@ -9,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: npm install
-        uses: actions/npm@master
+      - name: Setup node
+        uses: actions/setup-node@master
         with:
-          args: install
-      - name: npm test
-        uses: actions/npm@master
-        with:
-          args: run test
-      - name: npm lint
-        uses: actions/npm@master
-        with:
-          args: run lint
+          node-version: 14.x
+      - name: Install dependencies
+        run: |
+          npm install
+          npm ci 
+      - name: Lint & test
+        run: |
+          npm run lint
+          npm run test
       - name: docker build
         uses: actions/docker/cli@master
         with:
