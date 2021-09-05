@@ -1,6 +1,6 @@
 FROM node:10.16.0-alpine
 
-WORKDIR /source/c
+WORKDIR /source/nodejs-ci-cd
 
 COPY package.json /source/nodejs-ci-cd
 
